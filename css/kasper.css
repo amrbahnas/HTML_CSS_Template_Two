@@ -174,7 +174,7 @@ header .container nav ul li a:hover {
 
 .landing {
     background-color: #1f2021;
-    background-image: url(/img/landing.jpg);
+    background-image: url(../img/landing.jpg);
     background-size: cover;
     min-height: 100vh;
     position: relative;
