@@ -266,7 +266,7 @@ header .container nav ul li a:hover {
 
 @media (max-width:767px) {
     .landing .bullets {
-        bottom: 60px;
+        bottom: 100px;
     }
 }
 
