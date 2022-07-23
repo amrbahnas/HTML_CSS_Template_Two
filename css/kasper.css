@@ -124,7 +124,7 @@ header .container nav .toggle-menu:hover+ul {
     flex-direction: column;
     position: absolute;
     top: 100%;
-    left: -20px;
+    left: 0;
     width: 100%;
     background-color: rgb(0 0 0 / 50%);
 
@@ -277,7 +277,7 @@ header .container nav ul li a:hover {
 }
 
 .landing .bullets li:hover {
-    background-color: #171d1f;
+    box-shadow: 10px 10px 5px #aaaaaa inset;
 }
 
 /* end landing */
