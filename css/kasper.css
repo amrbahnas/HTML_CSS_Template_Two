@@ -9,6 +9,7 @@
 :root {
     --main-color: #19c8fa;
     --transparent-color: rgb(15 116 143 / 70%);
+    --section-padding: 30px;
 
 }
 
@@ -18,7 +19,6 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: black;
 }
 
 ul {
@@ -58,6 +58,54 @@ ul {
         width: 1170px;
     }
 }
+
+/* global compunnent */
+.section {
+    text-align: center;
+}
+
+.section .main-heading h2 {
+    position: relative;
+    margin: 70px auto;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.section .main-heading h2::before {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    background-color: #333;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 120px;
+}
+
+.section .main-heading h2::after {
+    content: '';
+    position: absolute;
+    bottom: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 15px;
+    width: 15px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.section .main-heading p {
+    width: 550px;
+    font-size: 14px;
+    color: #777;
+    margin: 0 auto 100px;
+    max-width: 100%;
+    line-height: 2;
+}
+
+/* end compunant */
 
 /* start header */
 header {
@@ -287,3 +335,55 @@ header .container nav ul li a:hover {
 }
 
 /* end landing */
+
+/* start services */
+.services {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+@media (min-width:768px) {
+    .services .sevices-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-column-gap: 40px;
+        grid-row-gap: 60px;
+    }
+}
+
+.services .serv {
+    display: flex;
+
+
+}
+
+.services .serv i {
+    margin-right: 50px;
+}
+
+@media (max-width: 767px) {
+    .services .serv {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .services .serv i {
+        margin: 0 0 30px;
+    }
+}
+
+.services .serv .text h3 {
+    color: var(--main-color);
+    margin-bottom: 30px;
+
+}
+
+.services .serv .text p {
+    color: #777;
+    max-width: 100%;
+    line-height: 2;
+}
+
+/* end services */
