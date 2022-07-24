@@ -392,7 +392,7 @@ header .container nav ul li a:hover {
 .design {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
-    background-image: url(/img/design-features.jpg);
+    background-image: url(../img/design-features.jpg);
     height: 600px;
     background-size: cover;
     display: flex;
