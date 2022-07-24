@@ -476,7 +476,12 @@ header .container nav ul li a:hover {
 
 .portfolio .container .shuffle li {
     padding: 10px 20px;
-    height: fit-content;
+}
+
+@media (max-width:768px) {
+    .portfolio .container .shuffle li {
+        font-size: 10px;
+    }
 }
 
 .portfolio .container .shuffle li.active {
