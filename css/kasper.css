@@ -9,7 +9,7 @@
 :root {
     --main-color: #19c8fa;
     --transparent-color: rgb(15 116 143 / 70%);
-    --section-padding: 30px;
+    --section-padding: 100px;
 
 }
 
@@ -66,7 +66,7 @@ ul {
 
 .section .main-heading h2 {
     position: relative;
-    margin: 70px auto;
+    margin: 0 auto 70px;
     font-weight: normal;
     text-transform: uppercase;
     font-size: 40px;
@@ -461,3 +461,100 @@ header .container nav ul li a:hover {
 }
 
 /* end design */
+
+/* start protifolio */
+.portfolio {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.portfolio .container .shuffle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio .container .shuffle li {
+    padding: 10px 20px;
+    height: fit-content;
+}
+
+.portfolio .container .shuffle li.active {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.portfolio .img_container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.portfolio .img_container .box {
+    position: relative;
+    flex-basis: 100%;
+    overflow: hidden;
+}
+
+@media (min-width:768px) {
+    .portfolio .img_container .box {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width:1199px) {
+    .portfolio .img_container .box {
+        flex-basis: 25%;
+    }
+}
+
+
+.portfolio .img_container .box img {
+    max-width: 100%;
+    transition: 0.3s;
+}
+
+.portfolio .img_container .box img:hover {
+    transform: rotate(3deg) scale(1.1);
+}
+
+.portfolio .img_container .box .caption {
+    position: absolute;
+    bottom: -100%;
+    transition: 0.3s;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.portfolio .img_container .box:hover .caption {
+    bottom: 0;
+}
+
+.portfolio .img_container .box .caption h3 {
+    font-weight: normal;
+    margin-bottom: 5px;
+
+}
+
+.portfolio .img_container .box .caption p {
+    color: var(--main-color);
+    font-size: 12px;
+}
+
+.portfolio .link {
+    width: fit-content;
+    margin: 20px auto;
+    background-color: var(--main-color);
+    text-decoration: none;
+    padding: 10px 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.portfolio .link:hover {
+    text-decoration: underline;
+}
+
+/* end portifolio */
