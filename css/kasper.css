@@ -377,7 +377,11 @@ header .container nav ul li a:hover {
 .services .serv .text h3 {
     color: var(--main-color);
     margin-bottom: 30px;
+    cursor: pointer;
+}
 
+.services .serv .text h3:hover {
+    text-decoration: underline;
 }
 
 .services .serv .text p {
@@ -449,6 +453,11 @@ header .container nav ul li a:hover {
 
 .design .design_text ul li {
     padding: 15px 0;
+    cursor: pointer;
+}
+
+.design .design_text ul li:hover {
+    text-decoration: underline;
 }
 
 .design .design_text ul li::before {
@@ -476,6 +485,11 @@ header .container nav ul li a:hover {
 
 .portfolio .container .shuffle li {
     padding: 10px 20px;
+    cursor: pointer;
+}
+
+.portfolio .container .shuffle li:not(li.active):hover {
+    color: var(--main-color);
 }
 
 @media (max-width:768px) {
@@ -556,10 +570,12 @@ header .container nav ul li a:hover {
     padding: 10px 30px;
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .portfolio .link:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 /* end portifolio */
