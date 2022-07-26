@@ -746,7 +746,6 @@ header .container nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
 }
 
 @media (max-width:767px) {
@@ -769,9 +768,7 @@ header .container nav ul li a:hover {
     display: flex;
     flex-basis: 45%;
     flex-wrap: wrap;
-    padding: 20px;
     position: relative;
-
 }
 
 .skill .testimonials h2 {
@@ -810,6 +807,7 @@ header .container nav ul li a:hover {
 
 .skill .testimonials .box p {
     line-height: 1.8;
+    margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #777;
     position: relative;
@@ -828,6 +826,11 @@ header .container nav ul li a:hover {
     .skill .testimonials .box p {
         padding-bottom: 30px;
     }
+
+    .skill .testimonials {
+        margin-bottom: 30px;
+    }
+
 
 }
 
@@ -859,7 +862,7 @@ header .container nav ul li a:hover {
     display: flex;
     flex-basis: 45%;
     flex-wrap: wrap;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .our_skills h2 {
@@ -877,7 +880,7 @@ header .container nav ul li a:hover {
 
 .our_skills .prog_holder {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
 }
 
 .our_skills .prog_holder .pro {
@@ -889,7 +892,7 @@ header .container nav ul li a:hover {
 
 .our_skills .prog_holder h4 {
     font-weight: normal;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .our_skills .prog_holder .pro span {
@@ -905,7 +908,8 @@ header .container nav ul li a:hover {
     background-color: black;
     color: white;
     padding: 5px 5px;
-    top: calc(-100% - 3px);
+    border-radius: 4px;
+    top: calc(-100% - 5px);
     right: -15px;
 }
 
@@ -915,9 +919,63 @@ header .container nav ul li a:hover {
     border-color: black transparent transparent transparent;
     border-style: solid;
     border-width: 5px;
-    top: -5px;
+    top: -7px;
     right: -4px;
 
 }
 
 /* end skill */
+
+/* start quote  */
+
+.quote {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    position: relative;
+    background-image: url(../img/beautiful-rendering-colorful-circles.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.quote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 20%);
+}
+
+.quote .container {
+    position: relative;
+}
+
+.quote q {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.quote .container q::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f10d";
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.quote .container q::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f10e";
+    font-weight: 900;
+    margin-left: 5px;
+
+}
+
+.quote span {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* end quote */
