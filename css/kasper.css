@@ -955,6 +955,8 @@ header .container nav ul li a:hover {
 .quote q {
     text-transform: uppercase;
     font-size: 20px;
+    text-align: center;
+    line-height: 1.8;
 }
 
 .quote .container q::before {
@@ -979,3 +981,116 @@ header .container nav ul li a:hover {
 }
 
 /* end quote */
+
+/* start pricing  */
+.pricing {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.pricing .container {}
+
+
+.pricing .container .offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width :767px) {
+    .pricing .container .offers {
+        flex-direction: column;
+    }
+
+    .pricing .container .offers .box {
+        margin-bottom: 50px;
+    }
+
+}
+
+.pricing .container .offers .box {
+    flex-basis: 20%;
+    border-top: 1px solid var(--main-color);
+}
+
+.pricing .container .offers .box>div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pricing .container .offers .box .money {
+    padding: 30px 50px;
+    border-bottom: 1px solid var(--main-color);
+
+}
+
+.pricing .container .offers .box .money h3 {
+    padding: 10px 0;
+    font-weight: normal;
+}
+
+.pricing .container .offers .box .money p {
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.pricing .container .offers .box .money p span {
+    font-size: 50px;
+
+}
+
+.pricing .container .offers .box .feature {
+    border-bottom: solid 1px var(--main-color);
+}
+
+.pricing .container .offers .box .feature p:not(p:last-child) {
+    padding: 20px 40px;
+    border-bottom: solid 1px var(--main-color);
+}
+
+.pricing .container .offers .box .feature p:last-child {
+    padding: 20px 40px;
+
+}
+
+.pricing .container .offers .box .button {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    padding: 5px 10px;
+    background-color: white;
+    border: solid 1px var(--main-color);
+    margin-top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.pricing .container .price_footer {
+    text-align: center;
+}
+
+.pricing .container .price_footer p {
+    margin: 100px 0 30px;
+}
+
+@media (max-width :767px) {
+    .pricing .container .price_footer p {
+        margin: 50px 0 30px;
+    }
+}
+
+.pricing .container .price_footer .contact_but {
+    width: fit-content;
+    margin: 20px auto;
+    background-color: var(--main-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* end pricing */
