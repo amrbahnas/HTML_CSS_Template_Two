@@ -1108,7 +1108,7 @@ header .container nav ul li a:hover {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
     position: relative;
-    background-image: url(../img/mail.jpg);
+    background-image: url(../img/subscribe.jpg);
     background-size: cover;
     position: relative;
 }
@@ -1325,10 +1325,15 @@ header .container nav ul li a:hover {
 
 .footer .container {
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footer .container img {
     width: 150px;
+    margin-top: 50px;
 }
 
 .footer .container h2 {
