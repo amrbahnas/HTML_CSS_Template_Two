@@ -931,25 +931,16 @@ header .container nav ul li a:hover {
 .quote {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
-    position: relative;
     background-image: url(../img/beautiful-rendering-colorful-circles.jpg);
     background-size: cover;
     text-align: center;
     color: white;
 }
 
-.quote::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0 0 0 / 20%);
-}
 
 .quote .container {
     position: relative;
+    width: 100%;
 }
 
 .quote q {
@@ -1218,8 +1209,161 @@ header .container nav ul li a:hover {
 
 }
 
-
-
-
-
 /* end mail */
+
+/* start contact  */
+.contact_us {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.contact_us .container .main_contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:767px) {
+    .contact_us .container .main_contact {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.contact_us .container .main_contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 80%;
+}
+
+@media (max-width:767px) {
+    .contact_us .container .main_contact form {
+        justify-content: center;
+    }
+}
+
+.contact_us .container .main_contact form input {
+    margin: 20px;
+    padding: 10px 20px;
+    caret-color: var(--main-color);
+    border: 1px solid #777;
+
+}
+
+.contact_us .container .main_contact form input::placeholder {
+    color: black;
+}
+
+.contact_us .container .main_contact form input:focus {
+    outline: none;
+}
+
+.contact_us .container .main_contact form input:nth-of-type(3) {
+    height: 100px;
+}
+
+.contact_us .container .main_contact form input[type="submit"] {
+    width: 200PX;
+    height: 50px;
+    color: white;
+    border: none;
+    background-color: var(--main-color);
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+@media (max-width:919px) {
+    .contact_us .container .main_contact form input[type="submit"] {
+        align-self: center;
+        width: 150PX;
+        height: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+.contact_us .container .main_contact .contact_info {
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact_us .container .main_contact .contact_info .box {
+    flex-basis: 40%;
+    margin-bottom: 70px;
+}
+
+@media (max-width:767px) {
+    .contact_us .container .main_contact .contact_info .box {
+        text-align: center;
+    }
+}
+
+.contact_us .container .main_contact .contact_info .box h3 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.contact_us .container .main_contact .contact_info .box p {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+/* end contact  */
+
+/* start footer  */
+.footer {
+    background-image: url(../img/footer.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.footer .container {
+    padding: 20px;
+}
+
+.footer .container img {
+    width: 150px;
+}
+
+.footer .container h2 {
+    font-weight: normal;
+    padding: 20px 20px;
+    position: relative;
+}
+
+
+.footer .container h2::after {
+    content: '';
+    height: 1px;
+    width: 300PX;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.footer .container .icon {
+    margin-top: 10px;
+}
+
+.footer .container .icon i {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer .container p {
+    margin: 50px 0 30px 0;
+}
+
+.footer .container p span {
+    color: var(--main-color);
+}
+
+/* end footer / */
