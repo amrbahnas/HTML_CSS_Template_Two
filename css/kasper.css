@@ -1243,7 +1243,8 @@ header .container nav ul li a:hover {
     }
 }
 
-.contact_us .container .main_contact form input {
+.contact_us .container .main_contact form input,
+.contact_us .container .main_contact form textarea {
     margin: 20px;
     padding: 10px 20px;
     caret-color: var(--main-color);
@@ -1251,15 +1252,17 @@ header .container nav ul li a:hover {
 
 }
 
-.contact_us .container .main_contact form input::placeholder {
+.contact_us .container .main_contact form input::placeholder,
+.contact_us .container .main_contact form textarea::placeholder {
     color: black;
 }
 
-.contact_us .container .main_contact form input:focus {
+.contact_us .container .main_contact form input:focus,
+.contact_us .container .main_contact form textarea:focus {
     outline: none;
 }
 
-.contact_us .container .main_contact form input:nth-of-type(3) {
+.contact_us .container .main_contact form textarea {
     height: 100px;
 }
 
